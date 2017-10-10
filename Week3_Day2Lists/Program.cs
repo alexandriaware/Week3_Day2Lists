@@ -36,21 +36,82 @@ namespace Week3_Day2Lists
             //leastFaveFoods[2] = "blue cheese";
             //Console.WriteLine(leastFaveFoods[2]);
 
-            List<string> faveFilms = new List<string>() { "LOTR", "Harry Potter", "Princess Bride", "Iron Giant", "Trolls" };
+            //List<string> faveFilms = new List<string>() { "LOTR", "Harry Potter", "Princess Bride", "Iron Giant", "Trolls" };
 
-            for(int i = 0; i < faveFilms.Count; i++)
+            //for(int i = 0; i < faveFilms.Count; i++)
+            //{
+            //    Console.WriteLine(faveFilms[i]); 
+            //}
+
+            //faveFilms.Insert(0, "Atlantis");
+            //faveFilms.Insert(1, "Hercules");
+            //faveFilms.Insert(2, "Sing");
+            //Console.WriteLine();
+
+            //foreach(string film in faveFilms)
+            //{
+            //    Console.WriteLine(film);
+            //}
+
+
+            //faveFilms.Remove("LOTR");
+            //faveFilms.Remove("Hercules");
+            //Console.WriteLine();
+
+            //foreach(string film in faveFilms)
+            //{
+            //    Console.WriteLine(film);
+            //}
+
+
+            ////Do it!
+            List<string> animals = new List<string>();
+            animals.Add("Otter");
+            animals.Add("Platypus");
+            animals.Add("Kangaroo");
+            animals.Add("Opossum");
+            animals.Add("Trash Panda");
+
+            foreach (string animal in animals)
             {
-                Console.WriteLine(faveFilms[i]); 
+                Console.WriteLine(animal);
             }
 
-            faveFilms.Insert(0, "Atlantis");
-            faveFilms.Insert(1, "Hercules");
-            faveFilms.Insert(2, "Sing");
 
-            foreach(string film in faveFilms)
+            ////Do it!! 2
+            List<bool> boolList = new List<bool>() { true, false, false, true, false };
+
+            foreach (bool booly in boolList)
             {
-                Console.WriteLine(film);
+                if (booly == true)
+                {
+                    Console.WriteLine("Better bring an umbrella!");
+                }
+                else
+                {
+                    Console.WriteLine("No rain today, enjoy the sun!");
+                }
+
+
+
             }
+
+
+            ////Do it!! 3
+            List<int> numbers = new List<int> { 1, 23, 9, 77, 922, 6, 32, 63, 14, 5 };
+
+            Console.WriteLine(numbers.Contains(23));
+            Console.WriteLine(numbers.Contains(77));
+            Console.WriteLine(numbers.Contains(15));
+
+            numbers.Remove(27);
+            numbers.Remove(77);
+            numbers.Remove(32);
+            numbers.Remove(6);
+
+            Console.WriteLine(numbers.Contains(23));
+            Console.WriteLine(numbers.Contains(77));
+            Console.WriteLine(numbers.Contains(15));
 
         }
     }
