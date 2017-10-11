@@ -54,7 +54,10 @@ namespace Week3_Day2Lists
             }
 
             string [] faveFilmsArray = faveFilms.ToArray(); // <--creates a new array out of a list.
-           
+
+            List<string> faveFilmsListFromArray =  faveFilmsArray.ToList<string>();
+
+
             faveFilms.Remove("Hercules");
             Console.WriteLine();
 
